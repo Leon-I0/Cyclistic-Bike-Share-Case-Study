@@ -1,0 +1,45 @@
+data report:
+
+The dataset contains 5,848,703 trip records covering the selected analysis period.
+
+after analyzing the data found that the zero-duration trips were primarily associated with electric bikes. Most of these records lacked station information, and the start and end coordinates were identical. This suggests that these records likely represent canceled or incomplete trips rather than actual rides. Therefore, they were excluded from the analysis to ensure that only completed trips were considered.
+
+1er insight
+
+Los miembros realizaron aproximadamente el 64% de todos los viajes registrados, mientras que los usuarios casuales representaron el 36%. Esto indica que los miembros utilizan el servicio con mayor frecuencia y constituyen la base principal de la demanda de Cyclistic. Sin embargo, el elevado volumen de viajes realizados por usuarios casuales demuestra que existe un segmento importante de clientes con potencial para convertirse en miembros mediante estrategias de marketing adecuadas.
+
+2ndo insight
+
+Los usuarios casuales presentan una duración promedio de viaje de 22.26 minutos, mientras que los miembros registran un promedio de 12.47 minutos. Esta diferencia sugiere que ambos grupos utilizan el servicio con propósitos distintos. Es probable que los miembros realicen trayectos más cortos como parte de su movilidad cotidiana, mientras que los usuarios casuales tienden a utilizar las bicicletas para actividades recreativas o de ocio, lo que explica una mayor duración de sus recorridos. Este comportamiento representa una oportunidad para que Cyclistic diseñe campañas dirigidas a usuarios casuales frecuentes, resaltando los beneficios económicos y la conveniencia de una membresía anual para quienes utilizan el servicio durante periodos prolongados.
+
+3er insight
+
+A pesar de que los miembros recorren una mayor distancia entre el origen y el destino, sus viajes presentan una menor duración promedio. Esto sugiere que ambos grupos utilizan el servicio de manera distinta. Los miembros podrían realizar trayectos más directos y eficientes, mientras que los usuarios casuales podrían dedicar más tiempo al uso de la bicicleta por motivos recreativos, realizando recorridos con paradas o rutas no directas.
+
+Nota metodológica: La distancia fue estimada mediante la función ST_DISTANCE() de BigQuery, la cual calcula la distancia geográfica entre el punto de inicio y el punto final del viaje. Debido a que no se dispone de la trayectoria completa del recorrido, esta métrica no representa la distancia total recorrida por el usuario y debe interpretarse como una aproximación.
+
+4to insight
+
+En cuanto al tipo de bicicleta utilizada, ambos grupos presentan un comportamiento muy similar, mostrando una clara preferencia por las bicicletas eléctricas. La preferencia observada podría estar relacionada con la comodidad o facilidad de uso que ofrecen las bicicletas eléctricas; sin embargo, los datos disponibles no permiten determinar las razones específicas de esta elección.
+
+Cyclistic podría considerar destacar la disponibilidad de bicicletas eléctricas dentro de sus campañas de marketing dirigidas a usuarios casuales, siempre que futuros análisis confirmen que este tipo de bicicleta influye positivamente en la decisión de adquirir una membresía anual.
+
+5to insight
+
+Dado que los usuarios casuales concentran una mayor parte de su actividad durante los fines de semana, Cyclistic podría implementar campañas digitales específicamente en esos días, destacando los beneficios económicos y la conveniencia de una membresía anual para usuarios que utilizan el servicio de manera recurrente en sus actividades recreativas.
+
+6to insight
+
+os datos muestran que ambos grupos concentran la mayor parte de sus viajes durante las últimas horas de la tarde, especialmente entre las 16:00 y las 18:00 horas. Sin embargo, al combinar este resultado con el análisis de los días de uso, se observa una diferencia importante en el contexto de utilización: los miembros realizan la mayoría de sus viajes durante los días laborales, mientras que los usuarios casuales concentran su actividad principalmente durante los fines de semana. Este comportamiento fortalece la hipótesis de que los miembros utilizan el servicio como parte de su movilidad cotidiana, mientras que los usuarios casuales lo emplean con mayor frecuencia para actividades recreativas o de ocio.
+
+Cyclistic podría programar campañas digitales y promociones personalizadas durante las horas de mayor actividad, especialmente entre las 16:00 y las 18:00 horas de los fines de semana, aprovechando que en ese periodo se concentra una gran parte de los viajes realizados por usuarios casuales, quienes representan el principal público objetivo para convertir en miembros anuales.
+
+7tmo insight
+
+En ambos segmentos se observa un comportamiento estacional muy marcado. Tanto los miembros como los usuarios casuales concentran la mayor cantidad de viajes durante los meses de verano, especialmente entre junio y septiembre, siendo julio y agosto los meses con mayor actividad. Por el contrario, durante los meses de invierno la demanda disminuye considerablemente. Este comportamiento sugiere que las condiciones climáticas influyen de manera importante en el uso del servicio, independientemente del tipo de usuario.
+
+Cyclistic podría concentrar sus campañas de conversión hacia membresías anuales durante los meses de mayor demanda (junio a septiembre), ya que en ese periodo existe una mayor interacción de ambos segmentos con el servicio. Asimismo, durante los meses de menor actividad podrían implementarse promociones o incentivos para mantener el uso del sistema y reducir el impacto de la estacionalidad.
+
+8vo insight
+
+Los resultados muestran que ambos segmentos concentran sus viajes en estaciones diferentes. Mientras que los usuarios casuales utilizan con mayor frecuencia estaciones como Navy Pier y DuSable Lake Shore Dr & Monroe St, los miembros presentan una mayor concentración en estaciones como Canal St & Madison St y Clinton St & Washington Blvd. Esto sugiere que ambos grupos poseen patrones de movilidad distintos y que determinadas estaciones podrían representar oportunidades para implementar estrategias de marketing dirigidas específicamente al perfil de usuario predominante en cada ubicación.

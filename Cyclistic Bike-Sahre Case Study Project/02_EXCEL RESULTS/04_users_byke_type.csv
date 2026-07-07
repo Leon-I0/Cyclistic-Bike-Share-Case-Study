@@ -1,0 +1,5 @@
+member_casual;rideable_type;num_trips;%
+member;electric_bike;2,463,200;65.73
+casual;electric_bike;1,437,500;68.47
+member;classic_bike;1,284,158;34.27
+casual;classic_bike;662,002;31.53

@@ -1,0 +1,26 @@
+Total Trips =
+COUNTROWS(cyclistic_clean)
+
+Average Trip Duration =
+AVERAGE(cyclistic_clean[trip_duration])
+
+Average Distance =
+AVERAGE(cyclistic_clean[distance_km])
+
+Member Trips =
+CALCULATE(
+    COUNTROWS(cyclistic_clean),
+    cyclistic_clean[member_casual] = "member"
+)
+
+Casual Trips =
+CALCULATE(
+    COUNTROWS(cyclistic_clean),
+    cyclistic_clean[member_casual] = "casual"
+)
+
+Member Share =
+DIVIDE([Member Trips], [Total Trips])
+
+Casual Share =
+DIVIDE([Casual Trips], [Total Trips])

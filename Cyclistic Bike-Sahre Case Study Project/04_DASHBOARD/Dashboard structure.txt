@@ -1,0 +1,20 @@
+┌───────────────────────────────────────────────────────────────┐
+│ KPI Cards                                                     │
+├───────────────────────────────────────────────────────────────┤
+│ Trips by User │ Average Duration │ Average Distance           │
+├───────────────────────────────────────────────────────────────┤
+│ Bike Type     │ Day of Week      │ Hour of Day               │
+├───────────────────────────────────────────────────────────────┤
+│ Month         │ Top Stations                            │
+└───────────────────────────────────────────────────────────────┘
+
+| Insight                                | Objetivo                          | Mejor visualización            | ¿Por qué?                                                                 |
+| -------------------------------------- | --------------------------------- | ------------------------------ | ------------------------------------------------------------------------- |
+| 1. ¿Quién realiza más viajes?          | Comparar cantidades               | ✅ Column Chart                 | Dos categorías, comparación directa.                                      |
+| 2. ¿Quién realiza viajes más largos?   | Comparar promedios                | ✅ Bar Chart horizontal         | Hace muy evidente cuál promedio es mayor.                                 |
+| 3. ¿Quién recorre mayores distancias?  | Comparar promedios                | ✅ Bar Chart horizontal         | Igual que el anterior para mantener consistencia.                         |
+| 4. ¿Qué bicicleta usa cada grupo?      | Comparar composición              | ✅ Stacked Column Chart         | Permite comparar miembros vs casuales y la distribución entre bicicletas. |
+| 5. ¿Qué días utilizan más el servicio? | Ver patrón semanal                | ✅ Clustered Column Chart       | Facilita comparar ambos grupos día por día.                               |
+| 6. ¿En qué horarios?                   | Ver comportamiento durante el día | ⭐ Line Chart (dos líneas)      | Muchísimo más fácil identificar los picos horarios.                       |
+| 7. ¿En qué meses?                      | Ver tendencia anual               | ⭐ Line Chart (dos líneas)      | Se aprecia claramente la estacionalidad.                                  |
+| 8. ¿Qué estaciones utilizan?           | Mostrar ranking                   | ✅ Horizontal Bar Chart (Top 5) | Las barras horizontales son ideales para nombres largos de estaciones.    |

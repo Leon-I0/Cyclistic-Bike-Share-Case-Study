@@ -1,0 +1,15 @@
+member_casual;day_of_week;num_trips
+member;Thursday;601,324
+member;Wednesday;594,294
+member;Tuesday;592,398
+member;Friday;548,564
+member;Monday;527,096
+member;Saturday;469,426
+member;Sunday;414,256
+casual;Saturday;432,667
+casual;Sunday;360,154
+casual;Friday;323,298
+casual;Thursday;266,996
+casual;Monday;245,179
+casual;Wednesday;236,443
+casual;Tuesday;234,765
