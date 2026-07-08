@@ -1,4 +1,4 @@
-# 🚲 Cyclistic Bike-Share Case Study
+🚲 Cyclistic Bike-Share Case Study
 
 ## Project Overview
 This project analyzes historical ride data from Cyclistic Bike-Share to identify behavioral differences between annual members and casual riders.
